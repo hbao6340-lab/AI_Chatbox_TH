@@ -1,0 +1,12 @@
+[project]
+name = "chatbot-widget"
+version = "0.1.0"
+description = "Chatbot widget API for Vercel"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.100.0",
+    "openai>=1.0.0",
+]
+
+[tool.vercel]
+entrypoint = "frontend_chatbox_server:app"
